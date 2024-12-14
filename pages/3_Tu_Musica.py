@@ -2,7 +2,7 @@ import streamlit as st
 
 def embed_youtube(video_id, width=340, height=190):
     """
-    Embeds a YouTube video with the given video ID
+    Inserta un video de YouTube con el ID de video dado
     """
     return f"""
         <iframe width="{width}" 
@@ -13,37 +13,35 @@ def embed_youtube(video_id, width=340, height=190):
         </iframe>
     """
 
-st.title("🎵 Our Special Songs")
-st.write("A collection of songs that tell our story...")
+st.title("🎵 Nuestras Canciones Especiales")
+st.write("Una colección de canciones que cuentan nuestra historia...")
 
-# Create columns for the videos
+# Crear columnas para los videos
 col1, col2 = st.columns(2)
 
-# https://www.youtube.com/watch?v=2IrzQXPzXsI  cancion con papas
+# https://www.youtube.com/watch?v=2IrzQXPzXsI  canción con papas
 
-
-
-# Dictionary of songs with video IDs and descriptions
+# Diccionario de canciones con IDs de video y descripciones
 songs = {
-    "Our First Song": {
-        "video_id": "5Xtc5ony-as",  # Replace with actual YouTube video ID
-        "description": "The song con la que nos identificamos"
+    "Nuestra Primera Canción": {
+        "video_id": "5Xtc5ony-as",  # Reemplazar con el ID de video de YouTube real
+        "description": "La canción con la que nos identificamos"
     },
-    "Your Favorite Song": {
-        "video_id": "3FYZcppWk5w",  # Replace with actual YouTube video ID
-        "description": "The song that always makes you smile..."
+    "Tu Canción Favorita": {
+        "video_id": "3FYZcppWk5w",  # Reemplazar con el ID de video de YouTube real
+        "description": "La canción que siempre te hace sonreír..."
     },
-    "Our Wedding Song": {
-        "video_id": "YOUR_VIDEO_ID_3",  # Replace with actual YouTube video ID
-        "description": "The melody that sealed our love..."
+    "Nuestra Canción de Boda": {
+        "video_id": "2IrzQXPzXsI",  # Reemplazar con el ID de video de YouTube real
+        "description": "La melodía que bailamos con los papás"
     },
-    "La cancion que pienso cuando te veo": {
-        "video_id": "odyrlzEutYg",  # Replace with actual YouTube video ID
-        "description": "Lo que significas para mi"
+    "La canción que pienso cuando te veo": {
+        "video_id": "odyrlzEutYg",  # Reemplazar con el ID de video de YouTube real
+        "description": "Lo que significas para mí"
     }
 }
 
-# Display videos in alternating columns
+# Mostrar videos en columnas alternas
 for i, (title, song_info) in enumerate(songs.items()):
     with col1 if i % 2 == 0 else col2:
         st.subheader(title)
@@ -51,9 +49,9 @@ for i, (title, song_info) in enumerate(songs.items()):
         st.write(song_info["description"])
         st.markdown("---")
 
-# Add a personal note
-st.markdown("""
-### 💝 Why These Songs Are Special
-Each of these songs carries a piece of our story, a moment we've shared, 
-or a feeling that reminds me of you...
+# Agregar una nota personal
+st.markdown(""" 
+### 💝 Por Qué Estas Canciones Son Especiales
+Cada una de estas canciones lleva un pedazo de nuestra historia, un momento que hemos compartido, 
+o un sentimiento que me recuerda a ti...
 """)

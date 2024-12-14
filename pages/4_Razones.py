@@ -1,14 +1,18 @@
 import streamlit as st
 
-st.header("💝 Reasons Why I Love You")
+st.header("💝 Razones Por Las Que Te Amo")
 reasons = [
-    "Your beautiful smile",
-    "Your kindness towards others",
-    "The way you make me laugh",
-    "Your strength and determination",
-    "How you make every day special",
+    "Tu hermosa sonrisa",
+    "La forma en que me haces reír",
+    "Tu fuerza y determinación",
+    "Cómo haces que cada día sea especial",
+    "Tu inteligencia y creatividad",
+    "La forma en que me apoyas en mis metas",
+    "La forma en que me miras",
+    "Tu capacidad para hacerme sentir seguro",
+    "La forma en que compartimos momentos simples",
+    "Tu ternura y cariño incondicional",
 ]
-
 
 for reason in reasons:
     st.markdown(f"- ✨ {reason}")

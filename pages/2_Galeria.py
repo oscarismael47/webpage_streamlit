@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 
-st.header("📸 Our Favorite Moments")
+st.header("📸 Nuestros momentos favoritos")
 gallery_col1, gallery_col2, gallery_col3 = st.columns(3)
 
 photos = [
