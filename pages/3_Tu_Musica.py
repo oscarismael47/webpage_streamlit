@@ -29,7 +29,7 @@ songs = {
     },
     "Tu Canción Favorita": {
         "video_id": "3FYZcppWk5w",  # Reemplazar con el ID de video de YouTube real
-        "description": "La canción que siempre te hace sonreír..."
+        "description": "La canción que te gusta"
     },
     "Nuestra Canción de Boda": {
         "video_id": "2IrzQXPzXsI",  # Reemplazar con el ID de video de YouTube real
